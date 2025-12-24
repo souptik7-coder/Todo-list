@@ -10,12 +10,20 @@ button.addEventListener("click",function(){
     item.appendChild(deletebutton);
     input.value="";
 })
-let lis=document.querySelectorAll(".delete");
-for(let i=0;i<lis.length;i++){
-    lis[i].addEventListener("click",function(){
+// let lis=document.querySelectorAll(".delete");
+// for(let i=0;i<lis.length;i++){
+//     lis[i].addEventListener("click",function(){
+//         console.log("deleted");
+//         let par=this.parentElement;
+//         console.log(par);
+//         par.remove();
+//     })
+// }
+ul.addEventListener("click",function(){
+    if(event.target.nodeName=="BUTTON"){
         console.log("deleted");
-        let par=this.parentElement;
-        console.log(par);
-        par.remove();
-    })
-}
+        let listitem=event.target.parentElement;
+        console.log(listitem);
+        listitem.remove();
+    }
+})
