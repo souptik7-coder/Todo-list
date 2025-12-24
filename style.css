@@ -1,0 +1,18 @@
+.add{
+    background-color: red;
+    color:whitesmoke;
+}
+.add:hover{
+    background-color: blueviolet;
+    color:azure;
+}
+input{
+    background-color:cadetblue;
+    color:white;
+}
+input::placeholder{
+    color:rgb(61, 45, 45);
+}
+h1{
+    color:rgb(123, 0, 255);
+}
